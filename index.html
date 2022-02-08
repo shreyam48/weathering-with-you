@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBbcNS8smhF1sbiXd6ZXeSXuJBrAazS1_Q"> 
+    <script src="https://kit.fontawesome.com/ba1ee379de.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <section>
+            <div class="weather-info">
+                <div class="temp" id="temp">25&deg;C</div>
+                <div class="city" id="city">Madrid, ES</div>
+                <div class="date" id="date">Sunday, 5 Sept '21</div>
+                <div class="time"><i class="far fa-clock"></i><span id="time"> 9 : 45</span></div>
+            </div>
+            <div class="weather-details">
+                <div class="searchInputBox">
+                    <input type="text" id="input-box" class="input-box" placeholder="Enter location..." autocomplete="off">
+                    <button id="btn" type="submit">Get Weather</button>
+                </div>
+                <div class="city-weather" id="city-2">Madrid, ES</div>
+                <div class="weather-status">
+                    <div class="weather" ><p>weather</p><p id="weather">Clear</p></div>
+                    <div class="min" ><p>min</p><p id="min">21&deg;C</p></div>
+                    <div class="max" ><p>max</p><p id="max">25&deg;C</p></div>
+                    <div class="pressure" ><p>Air pressure</p><p id="pressure">1017 hPa</p></div>
+                    <div class="humidity" ><p>humidity</p><p id="humidity">41%</p></div>
+                    <div class="visibility" ><p>visibility</p><p id="visibility">10.0 Km</p></div>
+                </div>
+            </div>
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>
